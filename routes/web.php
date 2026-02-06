@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FlightController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [FlightController::class, 'index']);
+Route::post('/search-flights', [FlightController::class, 'search']);
