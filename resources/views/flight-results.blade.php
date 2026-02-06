@@ -18,72 +18,72 @@
             /* Tailwind CSS styles */
             body {
                 font-family: 'Instrument Sans', sans-serif;
-                background: linear-gradient(135deg, #e0f7fa 0%, #f5fcff 100%);
-                color: #0d3b66;
+                background: linear-gradient(135deg, #e0f2f1 0%, #d1f0ea 100%);
+                color: #2e7d32;
             }
-            
+
             .results-container {
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 2rem;
             }
-            
+
             .search-summary {
                 background: white;
                 border-radius: 0.5rem;
-                box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+                box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
                 padding: 1.5rem;
                 margin: 1rem 0 2rem;
-                border-left: 4px solid #4fc3f7;
+                border-left: 4px solid #66bb6a;
             }
-            
+
             .flight-card {
                 background: white;
                 border-radius: 0.5rem;
-                box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+                box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
                 padding: 1.5rem;
                 margin-bottom: 1rem;
                 transition: transform 0.2s, box-shadow 0.2s;
-                border: 1px solid #bbdefb;
+                border: 1px solid #a5d6a7;
             }
-            
+
             .flight-card:hover {
                 transform: translateY(-2px);
-                box-shadow: 0 8px 16px rgba(0, 102, 204, 0.15);
-                border-color: #81d4fa;
+                box-shadow: 0 8px 16px rgba(46, 125, 50, 0.15);
+                border-color: #81c784;
             }
-            
+
             .flight-header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 1rem;
                 padding-bottom: 1rem;
-                border-bottom: 1px solid #e1f5fe;
+                border-bottom: 1px solid #c8e6c9;
             }
-            
+
             .flight-details {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
-            
+
             .route-info {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
             }
-            
+
             .airport-code {
                 font-weight: bold;
                 font-size: 1.2rem;
-                color: #0288d1;
+                color: #2e7d32;
             }
-            
+
             .airline-logo {
                 width: 40px;
                 height: 40px;
-                background: linear-gradient(135deg, #81d4fa 0%, #4fc3f7 100%);
+                background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
@@ -92,26 +92,26 @@
                 color: white;
                 font-weight: bold;
             }
-            
+
             .time-info {
                 text-align: center;
                 min-width: 120px;
             }
-            
+
             .duration {
                 text-align: center;
-                color: #4fc3f7;
+                color: #66bb6a;
                 font-size: 0.9rem;
             }
-            
+
             .price {
                 font-size: 1.5rem;
                 font-weight: bold;
-                color: #0288d1;
+                color: #2e7d32;
             }
-            
+
             .btn-select {
-                background: linear-gradient(135deg, #29b6f6 0%, #039be5 100%);
+                background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
                 color: white;
                 border: none;
                 padding: 0.5rem 1.5rem;
@@ -119,65 +119,65 @@
                 font-weight: 500;
                 cursor: pointer;
                 transition: all 0.2s;
-                box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
+                box-shadow: 0 2px 4px rgba(46, 125, 50, 0.2);
             }
-            
+
             .btn-select:hover {
-                background: linear-gradient(135deg, #039be5 0%, #0288d1 100%);
+                background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
                 transform: translateY(-1px);
-                box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+                box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
             }
-            
+
             .filters {
                 background: white;
                 border-radius: 0.5rem;
-                box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+                box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
                 padding: 1.5rem;
                 margin-bottom: 2rem;
-                border: 1px solid #e1f5fe;
+                border: 1px solid #c8e6c9;
             }
-            
+
             .filter-group {
                 display: flex;
                 gap: 1rem;
                 margin-bottom: 1rem;
                 flex-wrap: wrap;
             }
-            
+
             .filter-option {
                 padding: 0.5rem 1rem;
-                border: 1px solid #bbdefb;
+                border: 1px solid #a5d6a7;
                 border-radius: 0.375rem;
                 cursor: pointer;
                 transition: all 0.2s;
-                background-color: #e1f5fe;
+                background-color: #e8f5e9;
             }
-            
+
             .filter-option.active {
-                background: linear-gradient(135deg, #29b6f6 0%, #039be5 100%);
+                background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
                 color: white;
-                border-color: #039be5;
+                border-color: #2e7d32;
             }
-            
+
             .sort-options {
                 display: flex;
                 gap: 1rem;
                 margin-top: 1rem;
             }
-            
+
             .sort-option {
                 padding: 0.5rem 1rem;
-                border: 1px solid #bbdefb;
+                border: 1px solid #a5d6a7;
                 border-radius: 0.375rem;
                 cursor: pointer;
                 transition: all 0.2s;
-                background-color: #e1f5fe;
+                background-color: #e8f5e9;
             }
-            
+
             .sort-option.active {
-                background: linear-gradient(135deg, #29b6f6 0%, #039be5 100%);
+                background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
                 color: white;
-                border-color: #039be5;
+                border-color: #2e7d32;
             }
         </style>
     @endif
@@ -265,7 +265,22 @@
                         </div>
                         
                         <div>
-                            <button class="btn-select">Select</button>
+                            <form method="POST" action="{{ route('book.flight') }}" style="display: inline;">
+                                @csrf
+                                <input type="hidden" name="airline" value="{{ $flight['airline'] }}">
+                                <input type="hidden" name="flight_number" value="{{ $flight['flightNumber'] }}">
+                                <input type="hidden" name="passengers" value="{{ $passengers }}">
+                                <input type="hidden" name="price" value="{{ $flight['price'] }}">
+                                <input type="hidden" name="departure_code" value="{{ $flight['departure']['code'] }}">
+                                <input type="hidden" name="departure_city" value="{{ $flight['departure']['city'] }}">
+                                <input type="hidden" name="departure_time" value="{{ $flight['departure']['time'] }}">
+                                <input type="hidden" name="arrival_code" value="{{ $flight['arrival']['code'] }}">
+                                <input type="hidden" name="arrival_city" value="{{ $flight['arrival']['city'] }}">
+                                <input type="hidden" name="arrival_time" value="{{ $flight['arrival']['time'] }}">
+                                <input type="hidden" name="duration" value="{{ $flight['duration'] }}">
+                                <input type="hidden" name="stops" value="{{ $flight['stops'] }}">
+                                <button type="submit" class="btn-select">Select</button>
+                            </form>
                         </div>
                     </div>
                 </div>

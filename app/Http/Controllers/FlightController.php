@@ -7,6 +7,9 @@ use Carbon\Carbon;
 
 class FlightController extends Controller
 {
+    // Store mock bookings in memory (in a real app, this would be stored in a database)
+    private static $bookings = [];
+
     public function index()
     {
         return view('flight-booking');
@@ -38,6 +41,46 @@ class FlightController extends Controller
             'returnDate' => $validatedData['return_date'],
             'passengers' => $validatedData['passengers'],
             'flights' => $flights
+        ]);
+    }
+    
+    public function bookFlight(Request $request)
+    {
+        // In a real application, we would validate and store the booking in a database
+        // For this demo, we'll just create a mock booking
+        
+        $booking = [
+            'bookingId' => 'BK' . strtoupper(substr(md5(rand()), 0, 8)),
+            'airline' => $request->input('airline'),
+            'flightNumber' => $request->input('flight_number'),
+            'passengers' => $request->input('passengers', 1),
+            'price' => $request->input('price'),
+            'departure' => [
+                'code' => $request->input('departure_code'),
+                'city' => $request->input('departure_city'),
+                'time' => $request->input('departure_time')
+            ],
+            'arrival' => [
+                'code' => $request->input('arrival_code'),
+                'city' => $request->input('arrival_city'),
+                'time' => $request->input('arrival_time')
+            ],
+            'duration' => $request->input('duration'),
+            'stops' => $request->input('stops'),
+            'bookingDate' => Carbon::now()->format('Y-m-d H:i:s')
+        ];
+        
+        // Add to mock bookings array
+        self::$bookings[] = $booking;
+        
+        // Redirect to user bookings page
+        return redirect()->route('user.bookings');
+    }
+    
+    public function userBookings()
+    {
+        return view('user-bookings', [
+            'bookings' => self::$bookings
         ]);
     }
     

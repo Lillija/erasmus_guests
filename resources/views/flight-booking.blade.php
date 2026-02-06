@@ -18,8 +18,8 @@
             /* Tailwind CSS styles */
             body {
                 font-family: 'Instrument Sans', sans-serif;
-                background: linear-gradient(135deg, #e0f7fa 0%, #f5fcff 100%);
-                color: #0d3b66;
+                background: linear-gradient(135deg, #e0f2f1 0%, #d1f0ea 100%);
+                color: #2e7d32;
             }
             
             .booking-container {
@@ -31,10 +31,10 @@
             .booking-card {
                 background: white;
                 border-radius: 0.5rem;
-                box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+                box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
                 padding: 2rem;
                 margin: 2rem 0;
-                border: 1px solid #e1f5fe;
+                border: 1px solid #a5d6a7;
             }
             
             .form-group {
@@ -45,7 +45,7 @@
                 display: block;
                 margin-bottom: 0.5rem;
                 font-weight: 500;
-                color: #0d3b66;
+                color: #2e7d32;
             }
             
             .input-group {
@@ -56,16 +56,16 @@
             .input-field {
                 flex: 1;
                 padding: 0.75rem;
-                border: 1px solid #bbdefb;
+                border: 1px solid #a5d6a7;
                 border-radius: 0.375rem;
                 font-size: 1rem;
-                background-color: #f0f9ff;
+                background-color: #e8f5e9;
             }
             
             .input-field:focus {
                 outline: none;
-                border-color: #29b6f6;
-                box-shadow: 0 0 0 3px rgba(41, 182, 246, 0.2);
+                border-color: #4caf50;
+                box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
             }
             
             .date-picker {
@@ -77,11 +77,11 @@
                 right: 10px;
                 top: 50%;
                 transform: translateY(-50%);
-                color: #4fc3f7;
+                color: #66bb6a;
             }
             
             .btn-book {
-                background: linear-gradient(135deg, #29b6f6 0%, #039be5 100%);
+                background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
                 color: white;
                 border: none;
                 padding: 0.75rem 2rem;
@@ -89,13 +89,13 @@
                 font-weight: 500;
                 cursor: pointer;
                 transition: all 0.2s;
-                box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
+                box-shadow: 0 2px 4px rgba(46, 125, 50, 0.2);
             }
             
             .btn-book:hover {
-                background: linear-gradient(135deg, #039be5 0%, #0288d1 100%);
+                background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
                 transform: translateY(-1px);
-                box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+                box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
             }
             
             .trip-type {
@@ -106,17 +106,17 @@
             
             .trip-option {
                 padding: 0.5rem 1rem;
-                border: 1px solid #bbdefb;
+                border: 1px solid #a5d6a7;
                 border-radius: 0.375rem;
                 cursor: pointer;
                 transition: all 0.2s;
-                background-color: #e1f5fe;
+                background-color: #e8f5e9;
             }
             
             .trip-option.active {
-                background: linear-gradient(135deg, #29b6f6 0%, #039be5 100%);
+                background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
                 color: white;
-                border-color: #039be5;
+                border-color: #2e7d32;
             }
         </style>
     @endif
